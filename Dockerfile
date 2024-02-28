@@ -16,5 +16,8 @@ COPY . .
 # Postavte aplikáciu
 RUN npm run build
 
+# Nainštalujte http server
+RUN npm install -g http-server
+
 # Spustite server na porte 8080
-CMD ["node", "dist/health.js"]
+CMD ["http-server", "dist", "-p", "8080"]
