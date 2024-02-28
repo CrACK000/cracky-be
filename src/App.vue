@@ -1,30 +1,33 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import Header from "@/components/Header.vue";
+import Skills from "@/components/Skills.vue";
+import Projects from "@/components/Projects.vue";
+
+export default {
+  components: {
+    Projects,
+    Header,
+    Skills
+  }
+}
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+  <Header />
+
+  <div class="bg-gradient-to-tr from-emerald-500/30 to-emerald-600/80 text-center text-white font-medium p-14 w-full md:w-11/12 lg:w-10/12 xl:w-6/12 rounded-3xl my-10 mx-auto">
+    <span class="text-2xl font-semibold">
+      <span class="text-4xl">Hey!</span>
+    </span>
+  </div>
+
+  <projects class="py-16 lg:py-32" />
+
+  <skills class="py-16 lg:py-32" />
+
+  <div class="w-10/12 lg:w-7/12 mx-auto py-6 mt-12 text-center opacity-50 text-sm border-t border-emerald-200/5">
+    cracky.be <span class="opacity-25 inline-block mx-2">|</span> 2024
+  </div>
+
+</template>
