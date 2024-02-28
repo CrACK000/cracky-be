@@ -1,0 +1,1 @@
+http-server dist -p $PORT

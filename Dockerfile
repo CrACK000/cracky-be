@@ -19,5 +19,9 @@ RUN npm run build
 # Nainštalujte http server
 RUN npm install -g http-server
 
+# Kopírování start.sh skriptu do kontejneru a nastavení práv pro spouštění
+COPY start.sh ./start.sh
+RUN chmod +x ./start.sh
+
 # Spustite server na porte 8080
-CMD ["http-server", "dist", "-p", "8080"]
+CMD ["./start.sh"]
