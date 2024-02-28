@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: liveness-http
+spec:
+  containers:
+    - name: vigorous-jemison
+      image: 79eb0a2e3692c9044dd09149e1c52173f561b71a6c6d20cf87338da6de8cbcf6
+      livenessProbe:
+        httpGet:
+          path: /health
+          port: 8080
+        initialDelaySeconds: 3
+        periodSeconds: 3

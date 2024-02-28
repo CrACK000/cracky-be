@@ -19,6 +19,7 @@
     "flowbite": "^2.2.1",
     "flowbite-vue": "^0.1.2",
     "js-cookie": "^3.0.5",
+    "npm": "^10.5.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
