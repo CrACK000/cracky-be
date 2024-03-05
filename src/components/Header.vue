@@ -1,31 +1,29 @@
-<script lang="ts">
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-export default {
-  components: {
-    Menu,
-    MenuButton,
-    MenuItem,
-    MenuItems
-  }
-}
+<script setup lang="ts">
+
+import Container from "@/components/Container.vue";
 </script>
 
 <template>
-  <div class="flex items-center justify-center py-12">
-    <div class="text-5xl font-semibold select-none">
-      <span class="days-one-regular bg-clip-text text-transparent bg-gradient-to-tr from-emerald-500/70 to-emerald-600">CrACK</span>
-      <span class="days-one-regular text-base text-emerald-600">y.be</span>
-      <div class="text-base text-white/20 font-light text-center"><i class="fa-solid fa-code"></i></div>
+  <Container>
+    <div class="flex items-center justify-between py-12">
+      <div class="text-4xl text-blue-600 font-bold">
+        <router-link :to="{ name: 'index' }">
+          <div class="flex items-center">
+            CrACK
+            <i class="fa-solid fa-code text-base"></i>
+          </div>
+          <div class="text-blue-100/30 text-sm font-normal">
+            Patrik Fejfár
+          </div>
+        </router-link>
+      </div>
+      <div class="flex gap-x-10 items-center">
+        <router-link :to="{ name: 'index' }" class="menu-item">Home</router-link>
+        <router-link :to="{ name: 'projects' }" class="menu-item">Projects</router-link>
+        <router-link :to="{ name: 'skills' }" class="menu-item">Skills</router-link>
+        <router-link to="/contact" class="menu-item">Contact</router-link>
+      </div>
     </div>
-  </div>
+  </Container>
 </template>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
-
-.days-one-regular {
-  font-family: "Days One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-</style>

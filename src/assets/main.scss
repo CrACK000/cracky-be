@@ -8,17 +8,72 @@
 
 html {
   @apply
-  bg-neutral-900
+  bg-neutral-950
+  h-full
 }
 
 body {
   font-family: $font-page;
   @apply
-  text-emerald-100/50
+  text-blue-100/50
   bg-gradient-to-t
   from-blue-600/5
-  to-emerald-600/5
+    from-25%
+  to-blue-600/15
+  min-h-full
+}
+body::-webkit-scrollbar {
+  width: 8px
+}
+body::-webkit-scrollbar-track {
+  background: #232e33;
+  border-radius: 0;
+}
+body::-webkit-scrollbar-thumb {
+  background: #39484e;
+  border-radius: 3px;
+  border: 1px solid #232e33;
+}
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: #39484e
+    #232e33;
+  }
 }
 
 #app {
+  @apply
+  flex flex-col
+}
+
+.menu-item {
+  @apply
+  relative
+  px-2 py-1.5
+  text-lg
+  font-medium
+  hover:text-blue-500
+  hover:drop-shadow-xl
+  transition
+}
+.menu-item:before {
+  content: '';
+  @apply
+  absolute top-full inset-x-0
+  bottom-0 h-1
+  rounded
+  blur-[1px]
+  bg-blue-500
+  opacity-0 hover:opacity-75
+  transition
+}
+.menu-item:after {
+  content: '';
+  @apply
+  absolute top-full inset-x-0
+  bottom-0 h-1.5
+  blur-lg
+  bg-blue-500
+  opacity-0 hover:opacity-75
+  transition
 }

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "FKbrány s.r.o.",
+    "key": "fkbranysk",
+    "type":"Web/Admin",
+    "web": "https://fkbrany.sk",
+    "description": "Vyrábame ploty, brány a bránky na zákazku podľa konkrétnych požiadaviek zákazníka. Všetky brány, plotové dielce či kompletné systémy vyrábame na mieru.",
+    "version": "v4 beta",
+    "resolution": {
+      "mobile": true,
+      "tablet": true,
+      "desktop": true
+    },
+    "darkmode": false,
+    "git": {
+      "frontend": "https://github.com/CrACK000/fkbrany-frontend",
+      "backend": "https://github.com/CrACK000/fkbrany-backend"
+    },
+    "packages": {
+      "frontend": ["Vite", "Vue 3", "Vue Router", "Typescript", "Flowbite", "TailwindCSS"],
+      "backend": ["Node.js", "Express.js", "Joi", "Passport.js", "NodeMailer", "Typescript", "AWS Client S3"],
+      "database": ["MongoDB"]
+    },
+    "gallery": [
+      {
+        "title":"Firma zaoberajúca sa výrobou krídlových a posuvných brán na mieru",
+        "image": "/home.png",
+        "description": ""
+      },
+      {
+        "title":"Prehľad prác ktoré firma vykonala",
+        "image": "/references.png",
+        "description": ""
+      },
+      {
+        "title":"Formulár prispôsobený na žiadosť o renováciu brány",
+        "image": "/renovation.png",
+        "description": ""
+      },
+      {
+        "title":"Formulár prispôsobený na nacenenie brány",
+        "image": "/offer.png",
+        "description": "Obsahuje 4 kroky v ktorý je potreba vyplniť data na presnejšie nacenenie."
+      },
+      {
+        "title":"Kontaktný formulár",
+        "image": "/contact.png",
+        "description": ""
+      },
+      {
+        "title":"Autentifikácia",
+        "image": "/auth.png",
+        "description": ""
+      },
+      {
+        "title":"Administrácia webu",
+        "image": "/admin.png",
+        "description": "Nastavenia webu, Administrácia referencíi, Štatistika návštevnosti referencíi"
+      }
+    ]
+  },
+  {
+    "name": "Spravíme pre Vás",
+    "key": "spravime",
+    "type": "Aplikácia",
+    "web": "https://spravi.me",
+    "description": "Naša platforma umožňuje obyčajným ľuďom podať požiadavky na rôzne služby, od vykopávania základov po remeselné práce. Pre firmy a profesionálov je to príležitosť reagovať na tieto požiadavky a získať prácu.",
+    "version": "dev",
+    "resolution":  {
+      "mobile": true,
+      "tablet": true,
+      "desktop": true
+    },
+    "darkmode": true,
+    "git": {
+      "frontend": "https://github.com/CrACK000/spravime-frontend",
+      "backend": "https://github.com/CrACK000/spravime-backend"
+    },
+    "packages": {
+      "frontend": ["Vite", "Vue 3", "Vue Router", "Typescript", "Flowbite", "PrimeVue", "TailwindCSS"],
+      "backend": ["Node.js", "Express.js", "Passport.js", "Typescript", "AWS Client S3"],
+      "database": ["MongoDB"]
+    },
+    "gallery": []
+  }
+]

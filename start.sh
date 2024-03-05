@@ -1,1 +1,1 @@
-http-server dist -p $PORT
+http-server dist -p ${PORT:-8080}
