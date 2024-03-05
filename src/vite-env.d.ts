@@ -36,3 +36,14 @@ interface Resolution {
   tablet: boolean;
   desktop: boolean;
 }
+
+interface Skills {
+  name: string;
+  items: ItemSkills[];
+}
+
+interface ItemSkills {
+  name: string;
+  icon: string;
+  level: number;
+}

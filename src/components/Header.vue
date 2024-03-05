@@ -1,12 +1,11 @@
 <script setup lang="ts">
-
-import Container from "@/components/Container.vue";
+import Container from "@/components/Container.vue"
 </script>
 
 <template>
   <Container>
     <div class="flex items-center justify-between py-12">
-      <div class="text-4xl text-blue-600 font-bold">
+      <div class="text-4xl text-blue-500 font-bold">
         <router-link :to="{ name: 'index' }">
           <div class="flex items-center">
             CrACK
@@ -17,11 +16,10 @@ import Container from "@/components/Container.vue";
           </div>
         </router-link>
       </div>
-      <div class="flex gap-x-10 items-center">
+      <div class="hidden lg:flex gap-x-10 items-center">
         <router-link :to="{ name: 'index' }" class="menu-item">Home</router-link>
         <router-link :to="{ name: 'projects' }" class="menu-item">Projects</router-link>
         <router-link :to="{ name: 'skills' }" class="menu-item">Skills</router-link>
-        <router-link to="/contact" class="menu-item">Contact</router-link>
       </div>
     </div>
   </Container>

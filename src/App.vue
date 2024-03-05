@@ -8,7 +8,7 @@ import Footer from "@/components/Footer.vue";
   <Header />
 
   <RouterView v-slot="{ Component }">
-    <transition enter-active-class="animate__animated animate__fadeIn animate__fast" leave-active-class="animate__animated animate__fadeOut animate__fast" mode="out-in">
+    <transition enter-active-class="animate__animated animate__fadeIn animate__" leave-active-class="animate__animated animate__fadeOut" mode="out-in">
       <component :is="Component"/>
     </transition>
   </RouterView>

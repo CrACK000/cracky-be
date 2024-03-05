@@ -96,19 +96,19 @@ onBeforeMount(() => {
         <div class="mb-12 flex flex-col gap-y-6">
           <div>
             <div class="text-blue-400 font-medium mb-2.5">Frontend</div>
-            <div class="flex flex-wrap gap-x-2">
+            <div class="flex flex-wrap gap-2">
               <div v-for="item in project.packages.frontend" class="bg-black/20 px-3 py-1.5 rounded-lg">{{ item }}</div>
             </div>
           </div>
           <div>
             <div class="text-blue-400 font-medium mb-2.5">Backend</div>
-            <div class="flex flex-wrap gap-x-2">
+            <div class="flex flex-wrap gap-2">
               <div v-for="item in project.packages.backend" class="bg-black/20 px-3 py-1.5 rounded-lg">{{ item }}</div>
             </div>
           </div>
           <div>
             <div class="text-blue-400 font-medium mb-2.5">Databáza</div>
-            <div class="flex flex-wrap gap-x-2">
+            <div class="flex flex-wrap gap-2">
               <div v-for="item in project.packages.database" class="bg-black/20 px-3 py-1.5 rounded-lg">{{ item }}</div>
             </div>
           </div>
@@ -120,20 +120,20 @@ onBeforeMount(() => {
           <transition enter-active-class="animate__animated animate__fadeIn" leave-active-class="animate__animated animate__fadeOut" mode="out-in">
             <div class="aspect-video relative" :key="project.gallery[currentIndex].image">
               <img :src="`/${project.key}/${project.gallery[currentIndex].image}`" :alt="project.name" class="w-full h-full shadow-2xl shadow-blue-900/25 rounded-2xl">
-              <div class="absolute bottom-0 w-full p-6 bg-blue-600/5 backdrop-blur-xl rounded-b-2xl">
-                <div class="text-blue-300 font-medium text-lg">{{ project.gallery[currentIndex].title }}</div>
+              <div class="absolute bottom-0 w-full p-4 md:p-6 bg-blue-600/5 backdrop-blur-xl rounded-b-2xl text-sm md:text-base">
+                <div class="text-blue-300 font-medium md:text-base lg:text-lg">{{ project.gallery[currentIndex].title }}</div>
                 {{ project.gallery[currentIndex].description }}
               </div>
             </div>
           </transition>
 
           <div class="absolute top-0 w-full h-full flex items-center justify-between">
-            <button type="button" @click="previousImage" class="w-12 h-12 rounded-full flex items-center justify-center lg:-ms-20 bg-blue-400/25 hover:bg-blue-400/50 text-blue-300 hover:text-blue-50 shadow-xl transition">
+            <button type="button" @click="previousImage" class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center ms-2.5 lg:-ms-20 bg-blue-400/25 hover:bg-blue-400/50 text-blue-300 hover:text-blue-50 shadow-xl transition">
               <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
               </svg>
             </button>
-            <button type="button" @click="nextImage" class="w-12 h-12 rounded-full flex items-center justify-center lg:-me-20 bg-blue-400/25 hover:bg-blue-400/50 text-blue-300 hover:text-blue-50 shadow-xl transition">
+            <button type="button" @click="nextImage" class="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center me-2.5 lg:-me-20 bg-blue-400/25 hover:bg-blue-400/50 text-blue-300 hover:text-blue-50 shadow-xl transition">
               <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
               </svg>
@@ -150,10 +150,3 @@ onBeforeMount(() => {
     </div>
   </div>
 </template>
-
-<style>
-:root {
-  --animate-duration: 200ms;
-  --animate-delay: 0.2s;
-}
-</style>
