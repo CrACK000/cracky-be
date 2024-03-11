@@ -81,6 +81,99 @@
       "backend": ["Node.js", "Express.js", "Passport.js", "Typescript", "AWS Client S3"],
       "database": ["MongoDB"]
     },
-    "gallery": []
+    "gallery": [
+      {
+        "title":"Spravime",
+        "image": "/home.png",
+        "description": ""
+      },
+      {
+        "title":"Vytváranie požiadaviek",
+        "image": "/add-offer.png",
+        "description": ""
+      },
+      {
+        "title":"Galéria a Avatar užívateľa",
+        "image": "/gallery.png",
+        "description": ""
+      },
+      {
+        "title":"Komunikácia medzi firmou a zákazníkom",
+        "image": "/msg.png",
+        "description": ""
+      },
+      {
+        "title":"Reprezentatívny profil",
+        "image": "/profile.png",
+        "description": ""
+      },
+      {
+        "title":"Web v tmavom režime",
+        "image": "/profile-dark.png",
+        "description": ""
+      },
+      {
+        "title":"Zoznam firiem a majstrov",
+        "image": "/users.png",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "name": "GGame.be - Herná liga",
+    "key": "ggamebe",
+    "type": "Aplikácia",
+    "web": "https://ggame.be",
+    "description": "Vytvor si vlastný tím, pozvi priateľov a zapoj do rôznych eventov kde môžete získaj zaujímavé výhry.",
+    "version": "dev",
+    "resolution":  {
+      "mobile": false,
+      "tablet": false,
+      "desktop": true
+    },
+    "darkmode": true,
+    "git": {
+      "frontend": "https://github.com/CrACK000/ggame-frontend"
+    },
+    "packages": {
+      "frontend": ["Vite", "React", "React Router", "Typescript", "Flowbite", "TailwindCSS"]
+    },
+    "gallery": [
+      {
+        "title":"Herná liga",
+        "image": "/home.png",
+        "description": ""
+      },
+      {
+        "title":"Zoznam odohraných zápasov",
+        "image": "/matches.png",
+        "description": ""
+      },
+      {
+        "title":"Detaily teamu",
+        "image": "/team.png",
+        "description": ""
+      },
+      {
+        "title":"Svetlý režim pre frontend",
+        "image": "/homelight.png",
+        "description": ""
+      },
+      {
+        "title":"Eventy do ktorých sa hráči alebo teamy môžu zapájať",
+        "image": "/events.png",
+        "description": "Každý event má svojho moderátora."
+      },
+      {
+        "title":"Užívateľské rozhranie",
+        "image": "/auth.png",
+        "description": ""
+      },
+      {
+        "title":"Svetlé užívateľské rozhranie",
+        "image": "/authlight.png",
+        "description": ""
+      }
+    ]
   }
 ]

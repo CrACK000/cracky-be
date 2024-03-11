@@ -15,14 +15,14 @@ interface Project {
 }
 
 interface Git {
-  frontend: string;
-  backend: string;
+  frontend?: string;
+  backend?: string;
 }
 
 interface Packages {
-  frontend: string[];
-  backend: string[];
-  database: string[];
+  frontend?: string[];
+  backend?: string[];
+  database?: string[];
 }
 
 interface Gallery {
