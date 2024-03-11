@@ -20,16 +20,16 @@ const levels = ref<any>({
     </div>
     <div class="flex flex-col lg:flex-row gap-6 my-10 justify-center lg:items-center text-sm">
       <div class="flex items-center gap-2">
-        <div class="w-2 h-2 rounded-full bg-green-600"></div> Experienced
+        <div class="w-2 h-2 rounded-full bg-green-600"></div> Skúsený
       </div>
       <div class="flex items-center gap-2">
-        <div class="w-2 h-2 rounded-full bg-blue-500"></div> Advanced knowledge
+        <div class="w-2 h-2 rounded-full bg-blue-500"></div> Pokročilé znalosti
       </div>
       <div class="flex items-center gap-2">
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div> Basic understanding
+        <div class="w-2 h-2 rounded-full bg-orange-500"></div> Základné pochopenie
       </div>
       <div class="flex items-center gap-2">
-        <div class="w-2 h-2 rounded-full bg-red-600"></div> Minimum knowledge
+        <div class="w-2 h-2 rounded-full bg-red-600"></div> Minimálne znalosti
       </div>
     </div>
     <div>
