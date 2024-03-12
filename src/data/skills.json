@@ -11,21 +11,22 @@
     ]
   },
   {
+    "name": "Frameworks / knižnice",
+    "items": [
+      { "name": "Vue", "icon": "fa-brands fa-vuejs", "level": 1 },
+      { "name": "React", "icon": "fa-brands fa-react", "level": 3 },
+      { "name": "React-native", "icon": "fa-brands fa-react", "level": 4 },
+      { "name": "Laravel", "icon": "fa-brands fa-laravel", "level": 2 },
+      { "name": "TypeScript", "icon": "", "level": 2 },
+      { "name": "jQuery", "icon": "", "level": 2 }
+    ]
+  },
+  {
     "name": "Databázy",
     "items": [
       { "name": "MySQL/SQL", "icon": "fa-solid fa-database", "level": 1 },
       { "name": "MongoDB", "icon": "fa-solid fa-database", "level": 1 },
       { "name": "Redis", "icon": "fa-solid fa-database", "level": 4 }
-    ]
-  },
-  {
-    "name": "Frameworks / knižnice",
-    "items": [
-      { "name": "Vue", "icon": "fa-brands fa-vuejs", "level": 1 },
-      { "name": "React", "icon": "fa-brands fa-react", "level": 3 },
-      { "name": "Laravel", "icon": "fa-brands fa-laravel", "level": 2 },
-      { "name": "TypeScript", "icon": "", "level": 2 },
-      { "name": "jQuery", "icon": "", "level": 2 }
     ]
   },
   {
@@ -43,7 +44,8 @@
       { "name": "Adobe Photoshop", "icon": "", "level": 0 },
       { "name": "Git", "icon": "fa-brands fa-github", "level": 0 },
       { "name": "npm", "icon": "fa-brands fa-npm", "level": 0 },
-      { "name": "Docker", "icon": "fa-brands fa-docker", "level": 3 }
+      { "name": "Docker", "icon": "fa-brands fa-docker", "level": 3 },
+      { "name": "Expo Go", "icon": "", "level": 3 }
     ]
   }
 ]
