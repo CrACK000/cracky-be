@@ -16,8 +16,8 @@ COPY . .
 # Postavte aplikáciu
 RUN npm run build
 
-# Nainštalujte http server
-RUN npm install -g http-server
+# Nainštalujte serve http server
+RUN npm install -g serve
 
-# Spustite server na porte 8080
-CMD http-server dist -p ${PORT:-8080}
+# Spustite server na porte 8080 bez použitia schránky
+CMD serve -s dist -l ${PORT:-8080} --no-clipboard
