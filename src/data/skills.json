@@ -4,10 +4,9 @@
     "items": [
       { "name": "HTML", "icon": "fa-brands fa-html5", "level": 1 },
       { "name": "CSS", "icon": "fa-brands fa-css3-alt", "level": 1 },
-      { "name": "SASS", "icon": "fa-brands fa-sass", "level": 3 },
       { "name": "PHP", "icon": "fa-brands fa-php", "level": 1 },
       { "name": "JavaScript", "icon": "fa-brands fa-square-js", "level": 2 },
-      { "name": "Python", "icon": "fa-brands fa-python", "level": 4 }
+      { "name": "Python", "icon": "fa-brands fa-python", "level": 3 }
     ]
   },
   {
@@ -17,8 +16,7 @@
       { "name": "React", "icon": "fa-brands fa-react", "level": 3 },
       { "name": "React-native", "icon": "fa-brands fa-react", "level": 4 },
       { "name": "Laravel", "icon": "fa-brands fa-laravel", "level": 2 },
-      { "name": "TypeScript", "icon": "", "level": 2 },
-      { "name": "jQuery", "icon": "", "level": 2 }
+      { "name": "TypeScript", "icon": "", "level": 2 }
     ]
   },
   {
@@ -34,7 +32,8 @@
     "items": [
       { "name": "TailwindCSS", "icon": "", "level": 1 },
       { "name": "Bootstrap", "icon": "fa-brands fa-bootstrap", "level": 1 },
-      { "name": "UIkit", "icon": "fa-brands fa-uikit", "level": 1 }
+      { "name": "UIkit", "icon": "fa-brands fa-uikit", "level": 1 },
+      { "name": "Flowbite", "icon": "", "level": 1 }
     ]
   },
   {
@@ -42,8 +41,9 @@
     "items": [
       { "name": "PhpStorm", "icon": "", "level": 0 },
       { "name": "Adobe Photoshop", "icon": "", "level": 0 },
-      { "name": "Git", "icon": "fa-brands fa-github", "level": 0 },
+      { "name": "Github", "icon": "fa-brands fa-github", "level": 0 },
       { "name": "npm", "icon": "fa-brands fa-npm", "level": 0 },
+      { "name": "Postman", "icon": "", "level": 0 },
       { "name": "Docker", "icon": "fa-brands fa-docker", "level": 3 },
       { "name": "Expo Go", "icon": "", "level": 3 }
     ]
